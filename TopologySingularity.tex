@@ -88,7 +88,7 @@ sorting=nyt,
 \begin{document}
 
 
-\title{Topology of Kantorovich's Singularity Functor $Z$ and Optimal Semicouplings}
+\title{Topology of Singularities of Optimal Semicouplings}
 
 
 \author{J. H. Martel}
@@ -97,25 +97,18 @@ sorting=nyt,
 \maketitle
 
 \begin{abstract}
-This article summarizes some results from the author's doctoral thesis \cite{martel}. We study the topology of singularities of $c$-optimal semicouplings in unequal dimension. Our main results \ref{A}, \ref{B} describe homotopy-reductions from a source space $(X,\sigma)$ onto the singularities $Z_j$, $j\geq 0$ of $c$-optimal semicouplings whenever $(Y, \tau)$ is a Riemannian target space and $c: X\times Y\to \bR \cup \{+\infty\}$ is a cost satisfying some general assumptions (A0)--(A5). We construct continuous strong deformation retracts $X\leadsto Z_j$ whenever a condition called Uniform Halfspace (UHS) condition is satisfied along appropriate subsets. 
+This article is a summary of some results from the author's thesis \cite{martel}. We study the topology of singularities of $c$-optimal semicouplings in unequal dimension. Our main results \ref{A}, \ref{B} describe homotopy-reductions from a source space $(X,\sigma)$ onto the singularities $Z_j$, $j\geq 0$ of $c$-optimal semicouplings whenever $(Y, \tau)$ is a Riemannian target space and $c: X\times Y\to \bR \cup \{+\infty\}$ is a cost satisfying some general assumptions (A0)--(A5). We construct continuous strong deformation retracts $X\leadsto Z_j$ whenever a condition called Uniform Halfspace (UHS) condition is satisfied along appropriate subsets. 
 
-%If $X, Y$ are Riemannian manifolds with corners, and having source and target measures $\sigma, \tau$, respectively satisfying $\int_X \sigma > \int_Y \tau$, then we obtain a descending filtration $$(X
 
 \end{abstract}
 \tableofcontents
-
-
-%\section{Notation and Conventions}
-
-%%If $f: X\to \bR \cup \{\pm\infty\}$ is a function, we let $dom(f):=\{x\in X~|~f(x)\in \bR\}$. We assume $X$ is Riemannian such that functions $f: X\to \bR$ have well-defined gradients $\nabla_x f$ with respect to the $x$-variable. 
-
 
 
 \section{Introduction}
 
 %[Notation] 
 
-The symbols $X,Y$ designate finite-dimensional Riemannian manifolds-with-corners. The spaces $X,Y$ are typically of unequal dimension $\dim(X) >> \dim(Y)$. We let $\sigma, \tau$ denote Borel-Radon measures on $X,Y$, called the \emph{source} and \emph{target} measures, respectively. Typically $\sigma, \tau$ are absolutely continuous with respect to the Riemannian volume measures on $X,Y$, or absolutely continuous with respect to the Hausdorff measures $\mathscr{H}_X$, $\mathscr{H}_Y$. 
+Throughout this article $X, Y$ designate finite-dimensional Riemannian manifolds-with-corners. The spaces $X, Y$ are typically of unequal dimension $\dim(X) >> \dim(Y)$. We let $\sigma, \tau$ denote Borel-Radon measures on $X,Y$, called the \emph{source} and \emph{target} measures, respectively. We assume that $\sigma, \tau$ are absolutely continuous with respect to the Riemannian volume measures on $X,Y$, or absolutely continuous with respect to the Hausdorff measures $\mathscr{H}_X$, $\mathscr{H}_Y$. 
 %
 % The present thesis develops a bridge between measure theory and algebraic topology, as inspired from Kantorovich duality in optimal transport. The bridge is categorical, being a contravariant functor $Z=Z(c, \sigma, \tau)$ defined by a cost $c:X\times Y \to \bR$ between source $(X,\sigma)$ and target $(Y,\tau)$ measure spaces. If $2^X, 2^Y$ denote the category of closed subsets of $X,Y$ respectively, then $Z$ can be represented as a contravariant correspondance $Z: 2^Y \to 2^X$ between closed topological subsets of $Y$ and $X$, when $c$ satisfies some standard geometric assumptions. 
 
@@ -154,7 +147,7 @@ The Assumption (A4) implies the gradients of the cross-differences $\nabla_x \cd
 
 We will prove (A0)--(A4) implies the general uniqueness of $c$-optimal semicouplings. Peculiar to the semicoupling setting is (A4), which requires injectivity of mappings $y\mapsto \nabla_x c(x',y):Y\to T_{x'} X$ for every $x\in X$, where $\dim(Y)< \dim(X)$. The Assumption (A5) is useful in the construction of our deformation retracts in Theorems \ref{retract1}--\ref{retract2} below. 
 
-A further assumption (A6) is necessary for the deformation retracts constructed in the present article. These retracts depend on the nonvanishing of averaged vector fields denoted $\eta_{avg}(x) \in T_x X$. The field $\eta_{avg}$ is an average of a $Y$-parameter family of potentials $\eta(x,y)$ defined with respect to $c$-concave potentials $\psi^{cc}=\psi$, and parameters $\beta>0$, by formulas\begin{equation}\label{introetaavg}
+A further assumption (A6) is necessary for the deformation retracts constructed in the present article. These retracts depend on the nonvanishing of averaged vector fields denoted $\eta_{avg}(x) \in T_x X$. The field $\eta_{avg}$ is an average of a $Y$-parameter family of potentials $\eta(x,y)$ defined with respect to $c$-concave potentials $\psi^{cc}=\psi$, and parameters $\beta\geq 2$, by formulas\begin{equation}\label{introetaavg}
 \eta(x,y):=|\psi(y_0)-\psi(y)-\cd(x,y_0,y)|^{-\beta} \nabla_x (c(x,y_0)-c(x,y)) 
 \end{equation} for $y_0\in \del^c \phi(x)$, $y\in Y$. %Compare \eqref{avgI}, \eqref{avgII}, \ref{whs}. 
 The formal definition of $\eta_{avg}(x)$ depends on the setting. Typically there is a Radon measure $\bar{\nu}_x$ on $Y$, depending on $x$, absolutely continuous with respect to $\mathscr{H}_Y$, and with average \begin{equation}\label{introavg}
@@ -338,6 +331,8 @@ Let $c$ be cost satisfying Assumptions (A0)--(A4), and let $\sigma$, $\tau$ be a
 Then the inclusion $A \hookrightarrow X$ is a homotopy-isomorphism, and there exists strong deformation retract $X\leadsto A$. 
 \end{thm}
 
+
+
 The condition \eqref{thmaeta} is an assumption similar to (A6), and is key technical hypothesis for constructing the deformation retract. We remark that $\eta_{avg}(x)$ is uniformly bounded away from zero whenever the gradients $\nabla_x c(x,y)$, $y\in Y$, occupy a nontrivial halfspace for every $x$. Or equivalently, whenever the closed convex hull of $\nabla_x c(x,y)$, $y\in Y$, is disjoint from the origin $\textbf{0}$ in $T_x X$. Without the estimate $||\eta_{avg}(x)||\geq C >0$, our methods could only conclude that the source $X$ deformation retracts onto $\epsilon$-neighborhoods $A_\epsilon=\{x\in X| d(x,A) <\epsilon\} \hookrightarrow X$ of $A\hookrightarrow X$, where $\epsilon>0$ is a sufficiently small real number. 
 
 %
@@ -353,9 +348,6 @@ Now Theorem \ref{A} is an important preliminary result. Our primary motivations 
 
 %Remark. The following is remark on terminology "varieties". Alludes to later results on DC subvarieties.
 %We use ``subvariety" to mean a subset described by the vanishing of a collection of twice-continuously differentiable functions. In applications the functions will even be smooth. This is somewhat informal use of the term, however in [ref] we establish that the subvarieties $Z_j$, $j\geq 1$, are DC-subvarieties [ref].
-
-%Repetitive
-%If $\sigma$, $\tau$ are source, target measures satisfying \eqref{abundant}, then there exists $c$-optimal semicouplings from $\sigma$ to $\tau$. Kantorovich duality \ref{maxI} implies the existence of $c$-concave potentials $\psi^{cc}=\psi$ on the target $Y$. 
 
 %This is the descending filtration. Replace with later section.
 Let $Z=Z_{\psi}: 2^Y \to 2^X$ be the singularity functor $Z(Y_I)=\cap_{y\in Y_I} \ysub$. For integers $j\geq 1$, we define $Z_j$ to be the subset of $x\in X$ where the local tangent cone is at least $j$-dimensional at $x$. The formal definition is provided in \S \ref{ksf}, c.f. \ref{dim-est}, \ref{sing-dim}. The singularity structure is naturally cellulated by the cells $$Z'(x):=Z(\del^c\psi^c(x))$$ and admits a natural filtration $$(X=:Z_0)\hh (A=:Z_1) \hh Z_2 \hh Z_3 \hh \cdots $$ of $X$ by ``subvarieties" $Z_0$, $Z_1$, etc. Under the assumptions (A0)--(A3), the cell $Z'(x)$ has well-defined tangent space $T_x Z'(x)$. Let $pr_{Z'}: T_x X \to T_x Z'(x)$ be the orthogonal projection defined relative to the Riemannian structure on $X$.  
@@ -393,11 +385,12 @@ Let $d_Y$ be the metric distance on the target $Y$. Let $\phi=\psi^c$ be a $c$-c
 %\end{dfn}
 
 \begin{dfn}
-For $x\in X$, abbreviate $Y'(x):=dom(c_x)$. For a real parameter $\beta>0$ and $x\in X$, define the collection of tangent vectors $$ \eta(x, y):=|\psi(y_0)-\psi(y)+\cd(x; y, y_0)|^{-\beta} \cdot pr_{Z'}( \nabla_x \cd(x; y, y_0)). $$ For every $x$, define 
+For $x\in X$, abbreviate $Y'(x):=dom(c_x)$. For a real parameter $\beta>2$ and $x\in X$, define the collection of tangent vectors $$ \eta(x, y):=|\psi(y_0)-\psi(y)+\cd(x; y, y_0)|^{-\beta} \cdot pr_{Z'}( \nabla_x \cd(x; y, y_0)). $$ For every $x$, define 
 \begin{equation}
 \eta_{avg}(x):=(\mathscr{H}_Y[Y'(x)])^{-1} \int_{Y'(x)} \eta(x,y) \cdot \nu^\beta_x (y) \cdot d\mathscr{H}_Y(y). 
 \label{avg2}\end{equation} \`A priori, $\eta_{avg}(x)$ is a vector in $T_x Z'$. We say (UHS) Conditions are satisfied on $Z'(x)$ if $\eta_{avg}$ is bounded away from zero uniformly with respect to the source point $x$ (c.f. Definition \ref{whs}).
 \end{dfn}
+N.B. the parameter $\beta$ appears twice in the definition of $\eta_{avg}$: $\beta$ occurs in the definition of $\eta(x,y)$ and in the exponent of $\nu_x$. 
 
 %The hypothesis that $\eta_{avg}(x)$ be uniformly bounded away from zero is a weak version of the following condition.
 %\begin{dfn}\label{hh}
@@ -410,7 +403,7 @@ Our next result identifies the maximal index $J\geq 1$ such that $(A=Z_1) \hh Z_
 \begin{thm}\label{B} 
 Let $c$ be a cost satisfying Assumptions (A0)--(A5). Suppose $\sigma, \tau$ are source, target measures absolutely continuous with respect to $\mathscr{H}_X, \mathscr{H}_Y$, respectively and satisfying \eqref{abundant}. Let $\psi^{cc}=\psi$ be a $c$-concave potential (\ref{maxI}) solving Kantorovich's dual max program, and suppose $\phi=\psi^c$ is a $c$-convex potential such that $\del^c \phi(x)$ has finite cardinality for every $x$. Let $j\geq 1$ be an integer. 
 
-\textbf{(i)} Suppose there exists a parameter $\beta>0$ such that $\eta_{avg}(x')$  is bounded away from zero, uniformly with respect to $x' \in Z_j-Z_{j+1}$; and 
+\textbf{(i)} Suppose there exists a parameter $\beta\geq 2$ such that $\eta_{avg}(x')$  is bounded away from zero, uniformly with respect to $x' \in Z_j-Z_{j+1}$; and 
 
 \textbf{(ii)} Suppose the intersection $\sub \cap Z_{j+1} \neq \emptyset$ is nonempty for every $x'\in Z_j-Z_{j+1}$. 
 
@@ -438,17 +431,11 @@ Under the above hypotheses, the inclusion $Z_{j+1} \hookrightarrow Z_j$ is a hom
 
 %Euclidean Example below.
 
+Theorem \ref{A} has the following application to quadratic costs \begin{equation}\label{bqc} b(x,y):=d(x,y)^2/2=||x-y||^2/2\end{equation} for closed subsets $X,Y$ in a Euclidean space $\bR^N$. The gradients $\{\nabla_x c(x_0,y)\}_{y \in Y}$ are a subset of $T_{x_0} X$. Observe that the closed convex hull $conv\{\nabla_x c(x_0,y)\}_{y \in Y}$ contains the origin $\textbf{0}$ in $T_{x_0} X$ if and only if $x_0$ lies in the convex hull $conv(Y)$ of $Y$ in $\bR^N$. If the activated domain $A$ of a $d^2/2$-optimal semicoupling contains the convex hull $conv(Y) \subset A$, then Theorem \ref{A} implies the inclusion $A\subset X$ is a homotopy-isomorphism. The proof of Theorem \ref{A} constructs an explicit strong deformation retract of $X$ onto $A$.  We find $A$ contains $conv(Y)$ whenever the ratio $\int_X \sigma / \int_Y \tau>1$ is sufficiently close to $1^+$, i.e. whenever the active domain $A$ is a sufficiently large subset of $X$. 
 
-
-\begin{exx}
-Theorem \ref{A} has the following application to quadratic costs \begin{equation}\label{bqc} b(x,y):=d(x,y)^2/2=||x-y||^2/2\end{equation} for closed subsets $X,Y$ in a Euclidean space $\bR^N$. The gradients $\{\nabla_x c(x_0,y)\}_{y \in Y}$ are a subset of $T_{x_0} X$. Observe that the closed convex hull $conv\{\nabla_x c(x_0,y)\}_{y \in Y}$ contains the origin $\textbf{0}$ in $T_{x_0} X$ if and only if $x_0$ lies in the convex hull $conv(Y)$ of $Y$ in $\bR^N$. 
-
-If the activated domain $A$ of a $d^2/2$-optimal semicoupling contains the convex hull $conv(Y) \subset A$, then Theorem \ref{A} implies the inclusion $A\subset X$ is a homotopy-isomorphism. The proof of Theorem \ref{A} constructs an explicit strong deformation retract of $X$ onto $A$.  We find $A$ contains $conv(Y)$ whenever the ratio $\int_X \sigma / \int_Y \tau>1$ is sufficiently close to $1^+$, i.e. whenever the active domain $A$ is a sufficiently large subset of $X$. 
-
-%We illustrate with an example. Let $\sigma=\mathscr{L}$ be a Lebesgue measure on $\bR^N$, and let $\tau=(100)^{-1}\sum_{i=1}^{100} \delta_{y_i}$ be an empirical measure (normalized sum of Dirac masses on $\bR^N$). Evidently \eqref{abundant} is satisfied. Consider the restriction of $b$ \eqref{bqc} to $\bR^2 \times Y$. There exists unique $b$-optimal semicoupling from $\sigma$ to $\tau$, and let $A\subset \bR^2$ be the active domain. The active domain $A$ is a union of (possibly overlapping) Euclidean balls. The non-active domain $\bR^N-A$ is an unbounded open subset of $\bR^N$. Under the hypotheses of \ref{A}, we define an averaged potential $f_{avg}: \bR^N -A \to \bR$ which has property that both $$f_{avg}(x_k)\to +\infty \text{~~and~~}||\nabla_x f_{avg}(x_k)|| \to +\infty $$ whenever $x_k$ is a sequence in $\bR^N-A$ converging to $\lim_k x_k=x_\infty \in \del A$. See \eqref{favg} for definition of $f_{avg}$. Now the hypotheses of \ref{A} require $f_{avg}$ have no critical points on the open subset $\bR^N-A$. The nonexistence of critical points can be achieved by a simple observation: if $A\supset conv(Y)$, then for every $x\in \bR^N-A$ the gradients $\nabla_x c(x,y)$, $y\in Y$ occupy a nontrivial Halfspace of $T_x \bR^N$. This implies $\nabla_x f_{avg}$ is uniformly bounded away from zero.
+We illustrate with an example inspired by \cite{SturmH}. Let $\sigma=\mathscr{L}$ be a Lebesgue measure on $\bR^N$, and let $\tau=(100)^{-1}\sum_{i=1}^{100} \delta_{y_i}$ be an empirical Poisson sample, some radomnormalized sum of Dirac masses on $\bR^N$. Evidently \eqref{abundant} is satisfied. Consider the restriction of $b$ \eqref{bqc} to $\bR^2 \times Y$. There exists unique $b$-optimal semicoupling from $\sigma$ to $\tau$, and let $A\subset \bR^2$ be the active domain. The active domain $A$ is a union of possibly overlapping Euclidean balls. The non-active domain $\bR^N-A$ is an unbounded open subset of $\bR^N$. Under the hypotheses of \ref{A}, we define an averaged potential $f_{avg}: \bR^N -A \to \bR$ which has property that both $$f_{avg}(x_k)\to +\infty \text{~~and~~}||\nabla_x f_{avg}(x_k)|| \to +\infty $$ whenever $x_k$ is a sequence in $\bR^N-A$ converging to $\lim_k x_k=x_\infty \in \del A$. See \eqref{favg} for definition of $f_{avg}$. Now the hypotheses of \ref{A} require $f_{avg}$ have no finite critical points on the open subset $\bR^N-A$. But the nonexistence of critical points can be achieved by a simple observation: if $A\supset conv(Y)$, then for every $x\in \bR^N-A$ the gradients $\nabla_x c(x,y)$, $y\in Y$ occupy a nontrivial Halfspace of $T_x \bR^N$ with definite lengths, and this implies $\nabla_x f_{avg}$ is uniformly bounded away from zero.
 
 The hypotheses of \ref{A} are never satisfied when we restrict $b$ \eqref{bqc} to a convex subset $X:=F$ and its boundary $Y:=\del F$. If $\sigma=1_F \mathscr{L}$, and if the target $\tau$ is supported on $\del F$, and if \eqref{abundant} is satisfied with strict inequality, then the active domain $A$ of the unique $b$-optimal semicoupling from $\sigma$ to $\tau$ will not contain $conv(Y)$. Consequently $\eta_{avg}$ will vanish somewhere on $X-A$, and the hypotheses of \ref{A} are violated. In \cite[Ch.4]{martel} a repulsion cost $c|\tau$ is defined which will satisfy (UHS) conditions throughout the non active domains and satisfy hypotheses of \ref{A}. 
-\end{exx}
 
 \begin{figure}
 \centering
@@ -517,9 +504,9 @@ The hypotheses of \ref{A} are never satisfied when we restrict $b$ \eqref{bqc} t
 Suppose we have a Radon measure $\nu$ on the target $Y$, absolutely continuous with respect to $\mathscr{H}_Y$, and we take the $\nu$-average of a $\nu$-family of potentials $f$. The following lemma formally establishes that this averaged-gradient is indeed the gradient field of a continuously differentiable ``averaged" potential. 
 
 \begin{lem}\label{avgpot} 
-Let $\beta>0$. Let $\nu_1, \nu_2, \nu_3, \ldots$ be a sequence of empirical probability measures, i.e. renormalized sums of Dirac masses, which converge as $N\to +\infty$ in the weak-$*$ topology to the renormalized probability measure $(\bar{\nu}[Y])^{-1} \cdot \bar{\nu}$ on $Y$. Then:
+Let $\beta\geq 2$. Let $\nu_1, \nu_2, \nu_3, \ldots$ be a sequence of empirical probability measures, i.e. renormalized sums of Dirac masses, which converge as $N\to +\infty$ in the weak-$*$ topology to the renormalized probability measure $(\bar{\nu}[Y])^{-1} \cdot \bar{\nu}$ on $Y$. Then:
 
-(i) For $x\in X-A$, the limit \begin{equation}\label{limit}\lim_{N\to +\infty}  \int_Y (c(x,y) -\psi(y))^{-\beta} d\nu_N(y)\end{equation} exists and converges to the finite integral \begin{equation}\label{favg} f_{avg}(x):=(\bar{\nu}[Y])^{-1} \int_Y (c(x,y)-\psi(y)))^{-\beta}. d\bar{\nu}(y).\end{equation} 
+(i) For $x\in X-A$, the limit \begin{equation}\label{limit}\lim_{N\to +\infty} (1-\beta)^{-1}~ \int_Y (c(x,y) -\psi(y))^{1-\beta} d\nu_N(y)\end{equation} exists and converges to the finite integral \begin{equation}\label{favg} f_{avg}(x):=(1-\beta)^{-1}~\frac{1}{\bar{\nu}[Y]} \int_Y (c(x,y)-\psi(y))^{1-\beta}. d\bar{\nu}(y).\end{equation} 
 
 (ii) The rule $f_{avg}: X-A \to \bR$ defines a continuously differentiable function with gradient $$\nabla_x f_{avg}=(\bar{\nu}[Y])^{-1} \int _Y \nabla_x (c(x,y)-\psi(y))^{-\beta}.d\bar{\nu}(y).$$ 
 \end{lem}
@@ -544,8 +531,8 @@ If $c$ satisfies (A0)--(A4), then the limit defining $f_{avg}$ converges uniform
 
 %It is elementary to upperbound the averaged gradient \begin{equation}||\nabla_x f_{avg}|| \leq (\bar{\nu}[Y])^{-1} \int_Y ||\nabla_x f_y||d\bar{\nu}(y),  \label{upper}\end{equation} using triangle-inequality. The inequality \eqref{upper} says the averaged gradient diverges only if there is a measurable subset of $Y$ where the integrand diverges. Our applications require the converse: the divergence of at least one gradient $\nabla_x f_y$ should imply the divergence of the average gradient. This converse motivates our Assumption (A5). Informally we require that there is small cancellation between the terms $\{\nabla_x f_y~|~ y \in dom(c_{x})\}$. Then the ``large" gradients $\nabla_x f_y$ will have ``large" average with respect to $\bar{\nu}$. Here is formal definition.
 
-For $y\in Y$, $x\in X-A$, and $\beta>0$, we abbreviate 
-\begin{equation}\label{fy} f_y(x):=(c(x,y)-\psi(y))^{-\beta} \end{equation} and define \begin{equation}\label{favgdef}
+For $y\in Y$, $x\in X-A$, and $\beta\geq 2$, we abbreviate 
+\begin{equation}\label{fy} f_y(x):=\frac{1}{1-\beta}~(c(x,y)-\psi(y))^{1-\beta} \end{equation} and define \begin{equation}\label{favgdef}
 f_{avg}: X-A \to \bR, ~~~f_{avg}(x)=(\nu[Y])^{-1} \int_Y f_y(x).d\nu(y).
 \end{equation}
 
@@ -558,7 +545,7 @@ pointwise throughout $X-A$.
 
 When $Y$ is finite, $\#(Y)<+\infty$, the estimate \eqref{maxineq} requires the ratio $$||\nabla_x f_{avg}||/ \max_{y\in Y}||\nabla_x f_y||$$ be uniformly bounded away from zero throughout $X-A$. In this case, Property (C) and (UHS) conditions ensures the divergence of the average $\nabla_x f_{avg}$ whenever a gradient summand $\nabla_x f_y$ diverges. 
 
-When $Y$ is infinite with positive dimension, the pointwise divergence of an integrand $||f_y||\to +\infty$ need not imply the divergence of the average $f_{avg}$ for every choice of $\beta>0$ : rather the rate at which $f_y$ diverges must be sufficiently large. When cost $c$ satisfies Assumptions (A0)--(A5), Lemma \ref{lipsi} proves that $c$-concave potentials $\psi: Y\to \bR \cup \{-\infty\}$ are locally Lipschitz throughout $dom(\psi)$. This implies $\beta =\dim(Y)+2$ is sufficient. If $\{x_k\}_k$ is a countable sequence in $X-A$, then $f_{avg}(x_k)$ diverges to $+\infty$ if and only if $f_y(x_k)$ diverges for $y$ belonging to some subset $V\subset Y$. 
+When $Y$ is infinite with positive dimension, the pointwise divergence of an integrand $||f_y||\to +\infty$ need not imply the divergence of the average $f_{avg}$ for every choice of $\beta\geq 2$ -- rather the rate at which $f_y$ diverges must be sufficiently large. When cost $c$ satisfies Assumptions (A0)--(A5), Lemma \ref{lipsi} proves that $c$-concave potentials $\psi: Y\to \bR \cup \{-\infty\}$ are locally Lipschitz throughout $dom(\psi)$. This implies $\beta =\dim(Y)+2$ is sufficient. If $\{x_k\}_k$ is a countable sequence in $X-A$, then $f_{avg}(x_k)$ diverges to $+\infty$ if and only if $f_y(x_k)$ diverges for $y$ belonging to some subset $V\subset Y$. 
 
 
 
@@ -610,22 +597,25 @@ When $Y$ is infinite with positive dimension, the pointwise divergence of an int
 %he following lemma proves $f_0$ is strongly convex in the direction of $\nabla_x c(x,y_0)$ in neighborhoods of the poles $\{f_0=+\infty\}$.
 
 \begin{lem}\label{conc} 
-Let $c: X\times Y \to \bR$ be cost satisfying (A0)--(A5), as above, and $A\subset X$ the active domain of a $c$-optimal semicoupling. Fix $y_0\in Y$, and abbreviate $f_0(x):=f_{y_0}(x)=(c(x,y_0)-\psi(y_0))^{-\beta}$ for some $\beta>0$, $x\in X$. 
+Let $c: X\times Y \to \bR$ be cost satisfying (A0)--(A5), as above, and $A\subset X$ the active domain of a $c$-optimal semicoupling. Fix $y_0\in Y$, and abbreviate $f_0(x):=f_{y_0}(x)=\frac{1}{1-\beta}(c(x,y_0)-\psi(y_0))^{1-\beta}$ for some $\beta\geq 2$, $x\in X$. 
 Suppose:
 
 \textbf{(a)} $\nabla_x c(x,y_0)$ is uniformly bounded away from the origin; and
 
 \textbf{(b)}  $\nabla^2_{xx} c(x,y_0)$ is uniformly bounded above with respect to $x\in X-A$.
 
-Then for every $K>0$, there exists $\epsilon>0$ such that $\nabla_{xx}^2 f_0\geq K.Id>0$ in the direction of $\nabla_x c(x,y_0)$ throughout the $\epsilon$-neighborhood of $\{f_0=+\infty\}$ in $X-A$.
+Then for every $K>0$, there exists $\epsilon>0$ such that $\nabla_{xx}^2 f_0\geq K.Id>0$ in the direction of $-\nabla_x c(x,y_0)$ throughout the $\epsilon$-neighborhood of $\{f_0=+\infty\}$ in $X-A$.
 
 
 \end{lem}
 \begin{proof}
-The function $f_0$ is well-defined on $\{c(x,y_0)>\psi(y_0)\} \subset X$. If $x$ converges to $x_\infty \in \{c(x,y_0) \leq \psi(y_0)\}$, then both $f_0$, $\nabla_x f_0$ diverge to infinity.  We find $\nabla^2_{xx} f_0$ is equal to $$\beta(1+\beta) (c(x,y_0)-\psi(y_0))^{-2-\beta} \nabla_x c(x,y_0) \otimes \nabla_x c(x,y_0)-\beta (c(x,y_0)-\psi(y_0))^{-1-\beta} \nabla^2_{xx} c(x,y_0).$$ By Proposition \ref{a5spec} the gradients $\nabla_x c(x,y_0)$ are uniformly bounded away from zero in neighborhoods of $\{f_0=+\infty\}$. Assumption (A2) implies $\nabla^2_{xx} c(x,y_0)$ is uniformly bounded above on superlevel sets $\{f_0 \geq T\}$ for all $T>0$. Factoring out the term $\beta (c(x,y_0)-\psi(y_0))^{-1-\beta}$, we find $\nabla_{xx}^2 f_0$ is positively proportional \begin{equation}\label{concest} (1+\beta)(c(x,y_0)-\psi(y_0))^{-1} \nabla_x c(x,y_0) \otimes \nabla_x c(x,y_0) - \nabla_{xx}^2 c(x,y_0).\end{equation} We observe \eqref{concest} diverges to $+\infty$ with $(c(x,y_0)-\psi(y_0))^{-1}$. This implies $\nabla^2_{xx} f_0$ is positive semidefinite when $c(x,y_0)-\psi(y_0)>0$ is sufficiently small, and strongly convex $$\nabla_{xx}^2 f_0 \geq K >0$$ in the direction of $\nabla_x c(x,y_0)$. 
+The function $f_0$ is well-defined on $\{c(x,y_0)>\psi(y_0)\} \subset X$. If $x$ converges to $x_\infty \in \{c(x,y_0) \leq \psi(y_0)\}$, then both $f_0$, $\nabla_x f_0$ diverge to infinity.  We find $\nabla^2_{xx} f_0$ is equal to $$-\beta (c(x,y_0)-\psi(y_0))^{-1-\beta} \nabla_x c(x,y_0) \otimes \nabla_x c(x,y_0)+(c(x,y_0)-\psi(y_0))^{-\beta} \nabla^2_{xx} c(x,y_0).$$ By Proposition \ref{a5spec} the gradients $\nabla_x c(x,y_0)$ are uniformly bounded away from zero in neighborhoods of $\{f_0=+\infty\}$. Assumption (A2) implies $\nabla^2_{xx} c(x,y_0)$ is uniformly bounded above on superlevel sets $\{f_0 \geq T\}$ for all $T>0$. Factoring out the term $(c(x,y_0)-\psi(y_0))^{-\beta}$, we find $\nabla_{xx}^2 f_0$ is positively proportional to \begin{equation}\label{concest} -\beta~(c(x,y_0)-\psi(y_0))^{-1}~\nabla_x c(x,y_0) \otimes \nabla_x c(x,y_0) + \nabla_{xx}^2 c(x,y_0).\end{equation} We observe \eqref{concest} diverges to $-\infty$ when $(c(x,y_0)-\psi(y_0))^{-1}$ diverges to $+\infty$. This implies $\nabla^2_{xx} f_0$ is negative semidefinite when $c(x,y_0)-\psi(y_0)>0$ is sufficiently small, and strongly convex $$\nabla_{xx}^2 f_0 \geq K >0$$ in the direction of $-\nabla_x c(x,y_0)$. N.B. the change of sign. 
 
-By Assumption (A1) the sublevels $\{x ~|~\psi(y_0)\leq c(x,y_0) \leq \psi(y_0)+\epsilon'\}$ are compact subsets of $X-A$ for every $\epsilon'>0$. This implies a sufficiently small $\epsilon>0$ exists for which $\nabla^2_{xx} f_0\geq K.Id>0$ throughout the $\epsilon$-neighborhood of $\{f_0=+\infty\}$ in the direction $\nabla_x c(x,y_0)$. 
+By Assumption (A1) the sublevels $\{x ~|~\psi(y_0)\leq c(x,y_0) \leq \psi(y_0)+\epsilon'\}$ are compact subsets of $X-A$ for every $\epsilon'>0$. This implies a sufficiently small $\epsilon>0$ exists for which $\nabla^2_{xx} f_0\geq K.Id>0$ throughout the $\epsilon$-neighborhood of $\{f_0=+\infty\}$ in the direction $-\nabla_x c(x,y_0)$. 
 \end{proof}
+
+%Remark. We want the hessian to be convex in the direction of the flow $\eta(x,avg)$. This means the flow will asymptotically contract and become distance-decreasing and lipschitz, etc.. In above lemma, we need distinguish between the directions of $\nabla_x c(x,y_0)$ and the directions of $\nabla_x f_0$, which are opposite directions! This is because $f=1/c$ essentially. Hence we increase $f$ in the direction where $c$ is decreasing, i.e. negative gradient $\nabla_x c$. This caused initial confusion when reviewing the above proof.
+
 
 \begin{exx} 
 To illustrate Lemma \ref{conc}, consider the $f(x)=x^{-\beta}$ for $x\geq 0$, $\beta>0$. The gradient flow $x'= (-\beta)x^{-1-\beta}$ is bounded away from zero in neighborhoods of the pole at $x=0$, and indeed diverges to $+\infty$. Moreover $f''(x)$ is obviously bounded away zero and diverging to $+\infty$ as $x\to 0^+$. 
@@ -778,7 +768,7 @@ The proof proceeds as in (Case I). The vector field $x\mapsto \eta_{avg}(x)$ is 
 
 
 \section{Kantorovich's Contravariant Singularity Functor}\label{ks-1}
-Our thesis proposes a bridge between measure and algebraic topology. The bridge is realized by  contravariant functors $Z: 2^Y \to 2^X$, where $2^Y$ designates the category of closed subsets $Y_I$ of $Y$, and where morphisms are the inclusions $Y_I \subset Y_J$ between closed subsets $Y_I$, $Y_J$ whenever they exist. Likewise for $2^X$. 
+%Our thesis proposes a bridge between measure and algebraic topology. The bridge is realized by  contravariant functors $Z: 2^Y \to 2^X$, where $2^Y$ designates the category of closed subsets $Y_I$ of $Y$, and where morphisms are the inclusions $Y_I \subset Y_J$ between closed subsets $Y_I$, $Y_J$ whenever they exist. Likewise for $2^X$. 
 
 The singularity functor $Z: 2^Y \to 2^X$ is defined relative to a cost $c$ on $X \times Y$ satisfying Assumptions (A0)--(A4). Let $\sigma, \tau$ be absolutely continuous with respect to the Hausdorff measures $\mathscr{H}_X$, $\mathscr{H}_Y$ on $X, Y$ respectively. By Monge-Kantorovich duality \ref{maxI} there exists unique $c$-minimizing measures and $c$-concave potentials $\psi^{cc}=\psi$ on $Y$. The $c$-subdifferential $\del^c \psi$ is uniquely determined.
 
@@ -805,17 +795,17 @@ For given $x\in X$, we interpret $Z'(x):=Z(\del^c \psi^c (x))$ as a ``cellular n
 
 %For applications to algebraic topology, it is important to characterize collections $\{Y_i: i\in I\}$ of closed subsets of $Y$ (i.e. subcategories of $spt(Z)$ or $2^Y$) for which $\{Z(Y_i)| i\in I\}$ assembles to a geometric cycle in the sense of singular homology on $X$. This raises the question: for which collections does the chain sum $\sum_{i\in I} Z(Y_i)$ represent a closed singular chain, i.e. cycle of singular homology? Here the natural contravariance of $Z$ provides the answer, and there is elementary cohomological criterion using identity \eqref{adj} and Proposition \ref{cycle}. We illustrate with some elementary examples.
 
-\begin{figure}
-\centering
+%\begin{figure}
+%\centering
 %\includegraphics[width=0.6\textwidth]{cell-zing.jpg}
-\caption{Singularity structure $Z$ on active domain $A=Z_1$}
-\end{figure}
+%\caption{Singularity structure $Z$ on active domain $A=Z_1$}
+%\end{figure}
 
-\begin{figure}
-\centering
+%\begin{figure}
+%\centering
 %\includegraphics[width=0.6\textwidth]{z2-active.jpg}
-\caption{Singularity structure on $Z_2$}
-\end{figure}
+%\caption{Singularity structure on $Z_2$}
+%\end{figure}
 
 
 
@@ -844,112 +834,6 @@ For given $x\in X$, we interpret $Z'(x):=Z(\del^c \psi^c (x))$ as a ``cellular n
 %\end{proof}
 
 %The point of \ref{cont} is that the singularities of the limit $(\sigma, \tau, c)$ are no more complicated than the approximant singularities of $(\sigma_k, \tau_k, c_k)$. However it often arises that the approximants are much more complicated than the limit, where in fact the singularity greatly simplifies in various limits. Proposition \ref{cont} is familiar property of lower semicontinuous convex functions: if $\phi_k: X\to \bR$ is a sequence of lower semicontinuous convex functions which converge pointwise to a limit $\lim_{k\to +\infty} \phi_k=\phi_0$, then for every $x\in X$, the subdifferential $\del \phi_0(x)$ is a subset of the Hausdorff limit $\lim_{k\to +\infty} \del \phi_k(x)$. That is, the graph of the subdifferential $Id \times \del \phi$ of a lower semicontinuous convex function $\phi$ is a closed subset of $\bR^N\times \bR^N$ which varies upper semicontinuously with respect to the base point. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%\begin{exx}
-%Suppose $Y$ is a finite set. The category $2^Y$ has natural cellular structure of a cube. And this cube produces simplicial chain and dual simplicial cochain complexes, taking all coefficients over $\bZ/2$. We emphasize the cochain complexes arising from $2^Y$. For the complete category $2^Y$ this cochain complex is aspherical (trivial homology). However the restricted cochain complex on the subcategory $spt(Z)$ of $2^Y$ will typically have nontrivial cohomology. This is analogous to the elementary fact that aspherical spaces, e.g. $\bR^d$, admit numerous homologically nontrivial subsets. 
-%\end{exx}
-
-%\begin{exx} 
-%Let $Y=\{a,b,c\}$. Then the graded commutative ring $\bZ_2[a,b,c]/(a^2, b^2, c^2)$ determines a natural cochain complex $$0\to \bZ_2 \to \bZ_2.a\oplus \bZ_2.b \oplus \bZ_2.c \to \bZ_2.ab \oplus \bZ_2.ac \oplus \bZ_2.bc \to \bZ_2.abc \to 0, $$ with coboundary operator (i.e. differential) defined by $\delta(1)=a+b+c$, $\delta(a)=ab+ac$, $\delta(b)=ab+bc$, $\delta(c)=ac+bc$, $\delta(ab)=abc$, $\delta(bc)=abc$, etc. Note: this cubical cochain complex is naturally isomorphic to the Koszul complex over $\bZ/2$ defined by the element $\overline{y}:=\sum_{y\in Y} y$. Briefly, we recall the Koszul complex is a cochain complex $$0\to \bZ/2 \to \wedge^1 Y \to \wedge^2 Y \to \cdots, $$ where the coboundary operators take the form $d_{\overline{y}}(\xi)=\xi \wedge \overline{y}$ for every cochain group. We abuse notation and represent $2^Y$ as the $\bZ/2$-module $\bZ/2(Y)$. We refer the reader to \cite[Chapter IV. A]{local} for further details.
-%\end{exx}
-
-%\begin{exx}
-%Let $P$ be a convex compact polyhedron with finite extreme points $\sE[P]$ in a finite-dimensional affine space $\bR^{d+1}$. The extreme point set $\sE[F]$ coincides with the topological vertex set of the topological boundary $\del P$ of $P$, and $\sE[P]$ leads to a simplicial-complex on the boundary $\del P$. Let $\{C_n^{simp}(\del P)\}_n$ be the simplicial chain group of $\del P$ with simplicial boundary operator $$\del_{\del P,n}: C_n^{simp}(\del P) \to C_{n-1}^{simp}(\del P)$$ between the chain groups $$\cdots \to C_2^{simp}(\del P) \to C_1^{simp}(\del P) \to C_0^{simp}(\del P) \to 0.$$ 
-
-%Now construct $Q=P^\vee$ the polar polyhedron with respect to $P$ and the inner product $\langle, \rangle$ on $\bR^{d+1}$. See \cite[\S 1.5.4, pp.45-49]{Alexandrov} for definition. The polar polyhedron $Q=P^\vee$ has well-defined simplicial chain structure with simplicial boundary operator $$\del_{\del Q,n}:C_n(Q) \to C_{n-1}(Q)$$ defined between the simplicial chain groups. The boundary-operator $\del_{\del Q}$ is $(-1)$-degree map between these chain groups. 
-
-%The polar correspondance $P\mapsto P^\vee$ can be viewed as contravariant functor $POL: 2^Y \to 2^{Y^\vee}$ between $P$ and the polar $P^\vee$. The self-duality $(P^\vee)^\vee=P$ implies the functors $POL: 2^Y \to 2^{Y^\vee}$, $POL: 2^{Y^\vee} \to 2^Y$ are isomorphisms between the categories $2^Y$ and $2^{Y^\vee}$. 
-
-%The polar correspondance defines isomorphisms $$C_n^{simp}(\del P^{\vee}) \simeq C_{N-n}^{simp}(\del P)$$ for every $n\in \bZ$, where $N+1=\dim(P)$. The correspondance allows the construction of $(+1)$-degree maps $\del_Y=\{\del_{Y,n}\}_n$ between the simplicial chain groups \begin{equation} \delta^n_P: C_n(\del P) \to C_{n+1}(\del P), ~~\delta^n_Y(\alpha):=(\del_{Y^\vee, N-n} (\alpha^\vee))^\vee. \label{dualdel}
-%\end{equation} 
-
-%\end{exx}
-
-
-
-
-
-
-%The polar-correspondance also transports the boundary map $\del_{P^o}=\{\del^j_{P^o}|j\in \bZ\}$ to a coboundary map $\delta=\delta_P$ on $(P^o)^o=P$.%Indeed the simplicial boundary operator on the polar $Q=P^{o}$ transforms, via the polar correspondance to differential cochain maps $\delta_P=\{\delta_P^n|n\in \bZ\}$ defined $$\delta^n_P: C_n^{simp}(\del P) \to C_{n+1}^{simp}(\del P)$$ between the simplicial chain groups of $\del P$. %The polar-correspondance $P \mapsto P^{o}$ defines isomorphisms between the chain groups $$C_j^{simp}(\del P^{o}) \simeq C_{d-j}^{simp}(\del P)$$ for every $j\in \bZ$. The polar-correspondance also transports the boundary map $\del_{P^o}=\{\del^j_{P^o}|j\in \bZ\}$ to a coboundary map $\delta=\delta_P$ on $(P^o)^o=P$. 
-
-%The construction of a coboundary map via the polar-correspondance can be extended to simplicial chain sums $\underline{\alpha}=\sum_{i\in I} \alpha_i$. Then we obtain a polar chain sum $\underline{\alpha}^\vee$ defined by $$\underline{\alpha}^\vee= \sum_{i\in I} \alpha_i^\vee.$$ 
-
-%Now the singularity functor $Z: 2^Y \to 2^X$ defines a set-mapping $$Hom_{TOP}(\Delta^k, Y) \to Hom_{TOP}(\Delta^k, 2^X),$$ where $\Delta^k$ is the standard $k$-dimensional simplex. In otherwords, a continuous mapping $\alpha: \Delta^k \to Y$ produces a continuous mapping $Z(\alpha): \Delta^k \to 2^X$. Thus $\alpha: \Delta^k \to Y$ defines a $\Delta^k$-parameter family of points $\alpha(p)$ on $Y$, while the image $Z(\alpha)$ defines a continuous $\Delta^k$-parameter family of subvarieties $Z(\alpha(p))$, for $p\in \Delta^k, \alpha(p)\in Y$. The generic dimension of $Z(\alpha(p))$ is discussed in the following section, see Propositions \ref{sing-dim}, \ref{dim-est}. If $\sum_{i} \alpha_i$ is singular chain representing the fundamental class $[Y]$, then the chain sum $Z(\sum_{i} \alpha_i)=\sum_{i} Z(\alpha_i)$ defines a $Y$-parameter ``sweepout" of the activated source $Z_1$ by fibres $Z(y), y\in Y$.
-
-%, which relates the operator $\tilde{\del} Z(\alpha)$ to the image of the chain sum $Z(\delta_Y(\alpha))$.
-
-%The polar correspondance leads to the following useful adjunction formula.
-%\begin{prop}[Adjunction formula]
-%Let $Y=\del P$ be boundary of a compact convex polyhedron $P$ in $\bR^{d+1}$, and let $\delta=\delta_Y$ be the differential (coboundary degree $(+1)$ map between simplicial chain groups of $\del P$) constructed above. The correspondance $$\alpha \mapsto Z(\delta_Y \alpha)$$ defines a boundary-type operator on the image of $Z$ in $2^X$, and we have the following adjunction formula \begin{equation}
-%\del_X Z(\alpha)=Z(\delta_Y \alpha),   \label{adj}
-%\end{equation} where equality is with respect to singular chains on $X$ with coefficients in $\bZ/2$. 
-%\end{prop}
-%\begin{proof}
-%The identity \eqref{adj} is an adjunction formula, and everything follows as formal consequence of the ``transport-de-structure" in the sense of Bourbaki, c.f. \cite[IV.1.5]{bourbaki}. The contravariance of $Z:2^Y \to 2^X$ implies every cochain complex on $Y$ is naturally pushed forward to a chain complex on $X$, or specifically to the support of $Z$. 
-%\end{proof}
-
-%\begin{rem} 
-%If $P$ is a smooth closed projective subvariety, with explicit embedding $P \subset Proj(\bR^{N+1})$, then there is classical projective dual variety $P^\vee$, which is typically immersed into $Proj(\bR^{N+1})^\vee=Proj((\bR^{N+1})^*)$ and not necessarily smooth. However if the singular chain groups of $P^\vee$ can be evaluated, then the chain boundary $\del_{P^\vee}$, as above, defines a $(+1)$-degree map $\del_Y$ according to the same formula \eqref{dualdel}. The adjunction formula can be extended to projective subvarieties $P$ when $P^\vee$ has well-defined singular chain groups and singular homology. 
-%\end{rem}
-
-%The adjunction formula \eqref{adj} is useful in that $\delta_Y$ cocycles on $Y$ are seen to produce homological cycles on $X$, and with everything defined and evaluated in terms of singular chains. %The formal relation $Z(0_Y)=0_X$ proves $Z(\alpha)$ is a homological cycle whenever $\delta_Y \alpha =0$.
-
-%\begin{cor} \label{cycle}
-%Let $Z:2^Y \to 2^X$ be a contravariant functor. 
-%\begin{itemize}
-%\item[(i)] If $\alpha$ is a cocycle $\delta \alpha = 0$ on $Y$, then $Z(\alpha)$ is a chain sum representing a homological cycle $\del Z(\alpha)=0$ on $X$. 
-%\item[(ii)] If $\alpha=\delta \beta$ is an exact $q$-cocycle on $Y$, then $Z(\alpha)=Z(\delta \beta)=\del Z(\beta)$ is a boundary on $X$.
-%\item[(iii)] If we define $Z_1:=\cup_{y\in Y} Z(y)$, then $Z_1$ is a closed subvariety of $X$. 
-%\end{itemize}
-%\end{cor}
-%\begin{proof}
-% Applying formula \eqref{adj} finds (i) and (iii). To prove (ii), observe $\delta 1= \sum_{y\in Y} y$, so $Z(\delta 1)=\sum_{y\in Y} Z(y),$ is coincident with $Z_1$. Thus \eqref{adj} yields $\del Z_1=\del Z(\delta 1)$ $=Z(\delta \circ \delta 1)=Z(0)=0.$ 
-%\end{proof}
-
-%The cocycles $\alpha$ on $2^Y$ will be mapped by $Z$ to trivial $0$ element $Z(\alpha)=0$ if $\alpha$ is not supported on the subcategory $spt(Z)$ of $2^X$. If $Z=Z(c, \sigma, \tau)$ is the Kantorovich singularity of a $c$-optimal semicoupling between  source Hausdorff measure $\sigma$ and target Hausdorff measure $\tau$, then the active domain is an open subset of $X$, and $q$-dimensional cocycles $\alpha$ supported on $spt(Z)$ are generally mapped to codimension-$q$ cycles $Z(\alpha)$ on $X$. 
-
-%[Insert: weak-* limit definition of $\del_X$: requires hypothesess]
-
-%\begin{rem}
-% If we had a covariant functor (rather than contra-) e.g. $f^{-1}: 2^Y \to 2^X$ for a continuous proper map $f: X\to Y$, then cochain complexes on $2^Y$ could not be transported. But augmenting the map $f$ to the covariant functor $f: 2^X \to 2^Y$, defined naturally as $f(X_I)\subset Y$, then the cubical cochain complex on $Y$ readily pullsback to cochain complex on $X$. This is the standard pullback $H^*(f): H^*(Y) \to H^*(X)$ defined between cohomology groups. 
-%\end{rem}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1037,21 +921,6 @@ To illustrate, consider the Euclidean quadratic cost $c(x,y)=||x-y||^2/2$ on $X=
 
 
 
-
-
-
-
-%A\` priori $T_x Z'$ is a cone in the vector space $T_x X$, and it is useful to have criteria for which $T_x Z'$ is a vector subspace of $T_x X$. This requires the existence of two-sided transversals throughout the relative interior of $Z'$ in $X$. 
-
-
-%\begin{prop}
-%Let $\psi$ be $c$-concave potential. For $x_0 \in X$, abbreviate $Y_0:=\del^c \psi^c (x_0)$, and $Z'(x_0)=Z(Y_0)$. Suppose:
-%\begin{itemize}
-%\item $\nabla_x \cd(x,y,y_1)\neq 0$ for all $y\in Y$, $y_1\in Y_0$, $x\in Z'(x_0)$; and
-%\item $\dim (span\{\nabla_x\cd(x,y_1,y_0)~|~y_0, y_1 \in Y_0\})$ is constant throughout $Z'(x_0)$.
-%\end{itemize}
-%Then the topological boundary $\del Z'(x_0)$ can be expressed as the union $$\del Z'(x_0)=(Z'(x_0) \cap \del A) \cup (\cup \{ Z(Y_J) ~|~Y_J \supset Y_0, ~Y_J \neq Y_0\}).$$
-%\end{prop}
 
 
 
@@ -1352,9 +1221,7 @@ An important hypothesis for constructing our retractions is the (UHS) condition.
 \begin{dfn}
 \label{whs}
 
-Let $\phi=\psi^c$ be the $c$-convex potential. For $x_0\in dom(\psi^c)$ abbreviate $Z':=Z(\del^c \psi^c(x_0))$. Select any $y_0\in \del^c \psi^c(x_0)$. Recall the definition of $\nu_x(y)$ from \ref{order}.
-
-For parameter $\beta>2$, $x\in Z'$, $y\in Y$, define tangent vectors $\eta(x,y) \in T_x X$ by the equation \begin{equation}\eta(x, y):=|\psi(y_0)-\psi(y)+\cd(x; y, y_0)|^{-\beta} \cdot pr_{Z'}( \nabla_x \cd(x; y, y_0)). \label{lower0}
+Let $\phi=\psi^c$ be a $c$-convex potential. For $x_0\in dom(\psi^c)$ abbreviate $Z':=Z(\del^c \psi^c(x_0))$. Select any $y_0\in \del^c \psi^c(x_0)$. Recall the definition of $\nu_x(y)$ from \ref{order}. For parameter $\beta \geq 2$, $x\in Z'$, $y\in Y$, define tangent vectors $\eta(x,y) \in T_x X$ by the equation \begin{equation}\eta(x, y):=|\psi(y_0)-\psi(y)+\cd(x; y, y_0)|^{-\beta} \cdot pr_{Z'}( \nabla_x \cd(x; y, y_0)). \label{lower0}
 \end{equation} 
 
 We say Uniform Halfspace (UHS) conditions are satisfied at $x$ in $Z'$ with respect to the parameter $\beta$ if: 
@@ -1367,7 +1234,7 @@ We say Uniform Halfspace (UHS) conditions are satisfied at $x$ in $Z'$ with resp
 \end{equation} holds.
 \end{dfn}
 
-We make some remarks. First, we observe (UHS2) basically implies (UHS1). Second, the definition of $\eta(x,y)$ is independent of the choice of $y_0 \in \sub$. Third, in practice the parameter $\beta>2$ is taken sufficiently large to ensure the divergence of $\eta_{avg}(x)$ whenever $x$ converges into $\del Z'$. If $c$ satisfies Assumption (A5), then $\psi(y)$ is locally Lipschitz (Prop.\ref{lipsi}) and the exponent $\beta=\dim(Y)+2$ is sufficient. Finally, we observe that symmetry improves (UHS) conditions, i.e. if $\Gamma$ acts isometrically on $X\times Y$, then $c$-optimal semicouplings will also be $\Gamma$-equivariant (whenever $\sigma, \tau$ are).
+We make some remarks. First, we observe (UHS2) basically implies (UHS1). Second, the definition of $\eta(x,y)$ is independent of the choice of $y_0 \in \sub$. Third, in practice the parameter $\beta>2$ is taken sufficiently large to ensure the divergence of $\eta_{avg}(x)$ whenever $x$ converges into $\del Z'$. If $c$ satisfies Assumption (A5), then $\psi(y)$ is locally Lipschitz (Prop.\ref{lipsi}) and the exponent $\beta=\dim(Y)+2$ is sufficient. %Finally, we observe that symmetry improves (UHS) conditions, i.e. if $\Gamma$ acts isometrically on $X\times Y$, then $c$-optimal semicouplings will also be $\Gamma$-equivariant whenever $\sigma, \tau$ are equivariant.
 
 
 
@@ -1432,7 +1299,7 @@ In addition, if $J\geq 1$ is that maximal integer where (UHS) conditions are sat
 The proof of \ref{retract2} is analogous to our proof of Theorem \ref{retract1}, which is the ``base case" retraction of $X=Z_0$ onto the activated domain $A=Z_1$. The formal proof of \ref{retract1} required Lemmas \ref{ftbu}, \ref{maxinterval}. Likewise the formal proofs of \ref{retract2} require analogous lemmas, summarized in:
 
 \begin{lem}\label{L;ft}
-In the notations of \ref{retract1}--\ref{retract2} be satisfied. Let $j\geq 1$ be such that (UHS) conditions are satisfied for all $x\in Z_j$, and $Z'(x)\cap Z_{j+1}\neq \emptyset$ for every $x\in Z_j - Z_{j+1}$, and $\psi^c$ is separated. 
+In the notations of \ref{retract1}--\ref{retract2} be satisfied. Let $j\geq 1$ be such that (UHS) conditions are satisfied for all $x\in Z_j$, and $Z'(x)\cap Z_{j+1}\neq \emptyset$ for every $x\in Z_j - Z_{j+1}$, and $\del^c\psi^c$ is has pointwise finite cardinality. 
 
 For $x_0 \in Z_j - Z_{j+1}$, consider the initial value problem \begin{equation}\label{avgflow}
 x'=\eta_{avg}(x), ~~x(0)=x_0.
